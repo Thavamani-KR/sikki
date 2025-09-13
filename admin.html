@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Sikkim Tourism</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Sikkim Tourism - Admin</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="destinations.html" class="nav-link">Destinations</a></li>
+                <li><a href="itinerary.html" class="nav-link">Plan Trip</a></li>
+                <li><a href="booking.html" class="nav-link">Book Now</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="admin.html" class="nav-link admin-link active">Admin</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Admin Control Panel</h1>
+            <p>Manage the tourism ecosystem - bookings, inquiries, and content.</p>
+        </div>
+    </section>
+
+    <!-- Admin Dashboard -->
+    <section class="admin-section">
+        <div class="container">
+            <div class="admin-grid">
+                <div class="card">
+                    <h2><i class="fas fa-calendar-check"></i> Recent Bookings</h2>
+                    <div id="recentBookings">
+                        <p>Loading bookings...</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2><i class="fas fa-envelope"></i> Contact Inquiries</h2>
+                    <div id="recentInquiries">
+                        <p>Loading inquiries...</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2><i class="fas fa-chart-bar"></i> Quick Stats</h2>
+                    <div id="dashboardStats">
+                        <div class="stat-item">
+                            <span class="stat-number" id="totalBookings">0</span>
+                            <span class="stat-label">Total Bookings</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" id="totalInquiries">0</span>
+                            <span class="stat-label">Total Inquiries</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" id="totalItineraries">0</span>
+                            <span class="stat-label">Created Itineraries</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2><i class="fas fa-cog"></i> Admin Actions</h2>
+                    <div class="admin-actions">
+                        <button class="btn btn-primary" onclick="exportData()">
+                            <i class="fas fa-download"></i> Export Data
+                        </button>
+                        <button class="btn btn-secondary" onclick="clearData()">
+                            <i class="fas fa-trash"></i> Clear All Data
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sikkim Tourism</h3>
+                    <p>Discover the pristine beauty and cultural harmony of Sikkim in the Eastern Himalayas.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="itinerary.html">Plan Trip</a></li>
+                        <li><a href="booking.html">Book Now</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> 03592-XXXXXX</p>
+                    <p><i class="fas fa-envelope"></i> support@sikkimtourism.gov.in</p>
+                    <p><i class="fab fa-whatsapp"></i> +91-XXXXXXXXXX</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sikkim Tourism. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script defer src="admin.js"></script>
+    <script defer src="script.js"></script>
+</body>
+</html>

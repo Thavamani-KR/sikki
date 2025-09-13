@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Your Perfect Trip to Sikkim</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Sikkim Tourism</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="destinations.html" class="nav-link">Destinations</a></li>
+                <li><a href="itinerary.html" class="nav-link active">Plan Trip</a></li>
+                <li><a href="booking.html" class="nav-link">Book Now</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="admin.html" class="nav-link admin-link">Admin</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Plan Your Perfect Trip to Sikkim</h1>
+            <p>Select your favorite destinations and let us help you create an optimized travel plan – including routes, travel time, and suggestions for stopovers.</p>
+        </div>
+    </section>
+
+    <!-- Itinerary Planning Section -->
+    <section class="itinerary-section">
+        <div class="container">
+            <div class="itinerary-container">
+                <!-- Step 1: Select Destinations -->
+                <div class="card">
+                    <h2><i class="fas fa-map-marked-alt"></i> Step 1: Choose Your Destinations</h2>
+                    <p>Select the places you want to visit from the list below or add destinations from the <a href="destinations.html">destinations page</a>.</p>
+                    
+                    <div class="destination-selector">
+                        <div class="available-destinations">
+                            <h3>Available Destinations</h3>
+                            <div class="destinations-list" id="availableDestinations">
+                                <!-- Populated by JavaScript -->
+                            </div>
+                        </div>
+                        
+                        <div class="selected-destinations">
+                            <h3>Selected Destinations <span id="selectedCount">(0)</span></h3>
+                            <div id="selectedDestinationsList">
+                                <p class="no-selection">No destinations selected yet. Choose from the available destinations or visit our <a href="destinations.html">destinations page</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2: Trip Preferences -->
+                <div class="card">
+                    <h2><i class="fas fa-cog"></i> Step 2: Trip Preferences</h2>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="tripDuration">Trip Duration (Days)</label>
+                            <select id="tripDuration" class="form-control">
+                                <option value="3">3 Days</option>
+                                <option value="5">5 Days</option>
+                                <option value="7" selected>7 Days</option>
+                                <option value="10">10 Days</option>
+                                <option value="14">14 Days</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="travelStyle">Travel Style</label>
+                            <select id="travelStyle" class="form-control">
+                                <option value="budget">Budget Travel</option>
+                                <option value="comfort" selected>Comfort Travel</option>
+                                <option value="luxury">Luxury Travel</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="groupSize">Group Size</label>
+                            <select id="groupSize" class="form-control">
+                                <option value="1">Solo Traveler</option>
+                                <option value="2" selected>Couple</option>
+                                <option value="4">Small Group (3-5)</option>
+                                <option value="8">Large Group (6+)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="interests">Primary Interest</label>
+                            <select id="interests" class="form-control">
+                                <option value="cultural">Cultural Tourism</option>
+                                <option value="adventure">Adventure Tourism</option>
+                                <option value="eco">Eco-Tourism</option>
+                                <option value="religious">Religious Sites</option>
+                                <option value="photography">Photography</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3: Generate Itinerary -->
+                <div class="card">
+                    <h2><i class="fas fa-route"></i> Step 3: Generate Your Itinerary</h2>
+                    <button id="generateItinerary" class="btn btn-primary" onclick="generateItinerary()">
+                        <i class="fas fa-magic"></i> Generate Optimized Itinerary
+                    </button>
+                    
+                    <div id="itineraryResult" class="itinerary-output" style="display: none;">
+                        <!-- Generated itinerary will appear here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sikkim Tourism</h3>
+                    <p>Discover the pristine beauty and cultural harmony of Sikkim in the Eastern Himalayas.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="itinerary.html">Plan Trip</a></li>
+                        <li><a href="booking.html">Book Now</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> 03592-XXXXXX</p>
+                    <p><i class="fas fa-envelope"></i> support@sikkimtourism.gov.in</p>
+                    <p><i class="fab fa-whatsapp"></i> +91-XXXXXXXXXX</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sikkim Tourism. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script defer src="destinations.js"></script>
+    <script defer src="itinerary.js"></script>
+    <script defer src="script.js"></script>
+</body>
+</html>

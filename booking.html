@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Certified Guides and Tour Packages - Sikkim Tourism</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Sikkim Tourism</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="destinations.html" class="nav-link">Destinations</a></li>
+                <li><a href="itinerary.html" class="nav-link">Plan Trip</a></li>
+                <li><a href="booking.html" class="nav-link active">Book Now</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="admin.html" class="nav-link admin-link">Admin</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Book Certified Guides and Tour Packages</h1>
+            <p>Choose from our experienced local guides and customized tour packages for the perfect Sikkim experience.</p>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking-section">
+        <div class="container">
+            <div class="booking-options">
+                <div class="card">
+                    <h2><i class="fas fa-user-tie"></i> Local Tour Guides</h2>
+                    <p>Certified, multilingual, and experienced guides to enhance your Sikkim experience.</p>
+                    
+                    <form id="guideBookingForm" class="booking-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="guideName">Your Name</label>
+                                <input type="text" id="guideName" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="guideEmail">Email</label>
+                                <input type="email" id="guideEmail" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="guidePhone">Phone Number</label>
+                                <input type="tel" id="guidePhone" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="guideLanguage">Preferred Language</label>
+                                <select id="guideLanguage" class="form-control" required>
+                                    <option value="">Select Language</option>
+                                    <option value="english">English</option>
+                                    <option value="hindi">Hindi</option>
+                                    <option value="nepali">Nepali</option>
+                                    <option value="bengali">Bengali</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="guideDate">Tour Date</label>
+                                <input type="date" id="guideDate" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="guideDuration">Duration (Days)</label>
+                                <select id="guideDuration" class="form-control" required>
+                                    <option value="">Select Duration</option>
+                                    <option value="1">1 Day</option>
+                                    <option value="2">2 Days</option>
+                                    <option value="3">3 Days</option>
+                                    <option value="5">5 Days</option>
+                                    <option value="7">7 Days</option>
+                                    <option value="custom">Custom</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="guideDestinations">Destinations to Visit</label>
+                            <textarea id="guideDestinations" class="form-control" placeholder="List the places you want to visit..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Book Guide - ₹2,500/day</button>
+                    </form>
+                </div>
+
+                <div class="card">
+                    <h2><i class="fas fa-suitcase"></i> Custom Tour Packages</h2>
+                    <p>Cultural tours, trekking expeditions, family tours, and customized packages.</p>
+                    
+                    <form id="packageBookingForm" class="booking-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="packageName">Your Name</label>
+                                <input type="text" id="packageName" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="packageEmail">Email</label>
+                                <input type="email" id="packageEmail" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="packagePhone">Phone Number</label>
+                                <input type="tel" id="packagePhone" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="packageType">Package Type</label>
+                                <select id="packageType" class="form-control" required>
+                                    <option value="">Select Package</option>
+                                    <option value="cultural">Cultural Tour</option>
+                                    <option value="adventure">Adventure Package</option>
+                                    <option value="family">Family Tour</option>
+                                    <option value="trekking">Trekking Expedition</option>
+                                    <option value="custom">Custom Package</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="packageDate">Start Date</label>
+                                <input type="date" id="packageDate" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="packageGuests">Number of Guests</label>
+                                <select id="packageGuests" class="form-control" required>
+                                    <option value="">Select Guests</option>
+                                    <option value="1">1 Person</option>
+                                    <option value="2">2 People</option>
+                                    <option value="4">3-4 People</option>
+                                    <option value="6">5-6 People</option>
+                                    <option value="more">More than 6</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="packageRequirements">Special Requirements</label>
+                            <textarea id="packageRequirements" class="form-control" placeholder="Tell us about your preferences, dietary requirements, accessibility needs, etc."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Request Quote</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sikkim Tourism</h3>
+                    <p>Discover the pristine beauty and cultural harmony of Sikkim in the Eastern Himalayas.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="itinerary.html">Plan Trip</a></li>
+                        <li><a href="booking.html">Book Now</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> 03592-XXXXXX</p>
+                    <p><i class="fas fa-envelope"></i> support@sikkimtourism.gov.in</p>
+                    <p><i class="fab fa-whatsapp"></i> +91-XXXXXXXXXX</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sikkim Tourism. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script defer src="booking.js"></script>
+    <script defer src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Help - Sikkim Tourism</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Sikkim Tourism</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="destinations.html" class="nav-link">Destinations</a></li>
+                <li><a href="itinerary.html" class="nav-link">Plan Trip</a></li>
+                <li><a href="booking.html" class="nav-link">Book Now</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                <li><a href="admin.html" class="nav-link admin-link">Admin</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Need Help? Get in Touch with Us</h1>
+            <p>We're here to help you plan the perfect Sikkim experience. Contact us for any assistance or inquiries.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-form-card card">
+                    <h2><i class="fas fa-envelope"></i> Send Us a Message</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="contactName">Name</label>
+                            <input type="text" id="contactName" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Email</label>
+                            <input type="email" id="contactEmail" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject">Subject</label>
+                            <select id="contactSubject" class="form-control" required>
+                                <option value="">Select Subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="booking">Booking Assistance</option>
+                                <option value="itinerary">Itinerary Planning</option>
+                                <option value="guide">Guide Services</option>
+                                <option value="complaint">Complaint</option>
+                                <option value="feedback">Feedback</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Message / Inquiry</label>
+                            <textarea id="contactMessage" class="form-control" rows="5" placeholder="Please describe your inquiry or how we can help you..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <div class="contact-info-card card">
+                    <h2><i class="fas fa-info-circle"></i> Contact Information</h2>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>03592-XXXXXX</p>
+                            <small>Mon-Fri, 9:00 AM - 6:00 PM</small>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>WhatsApp</h4>
+                            <p>+91-XXXXXXXXXX</p>
+                            <small>24/7 Support Available</small>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>support@sikkimtourism.gov.in</p>
+                            <small>We'll respond within 24 hours</small>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Office Address</h4>
+                            <p>Sikkim Tourism Department<br>
+                            Gangtok, Sikkim 737101<br>
+                            India</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sikkim Tourism</h3>
+                    <p>Discover the pristine beauty and cultural harmony of Sikkim in the Eastern Himalayas.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="itinerary.html">Plan Trip</a></li>
+                        <li><a href="booking.html">Book Now</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> 03592-XXXXXX</p>
+                    <p><i class="fas fa-envelope"></i> support@sikkimtourism.gov.in</p>
+                    <p><i class="fab fa-whatsapp"></i> +91-XXXXXXXXXX</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sikkim Tourism. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script defer src="contact.js"></script>
+    <script defer src="script.js"></script>
+</body>
+</html>

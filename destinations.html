@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Top Tourist Places in Sikkim</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Sikkim Tourism</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="destinations.html" class="nav-link active">Destinations</a></li>
+                <li><a href="itinerary.html" class="nav-link">Plan Trip</a></li>
+                <li><a href="booking.html" class="nav-link">Book Now</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="admin.html" class="nav-link admin-link">Admin</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Explore Top Tourist Places in Sikkim</h1>
+            <p>Sikkim is home to snow-capped peaks, alpine valleys, monasteries, lakes, and rich biodiversity. Discover iconic destinations and hidden gems across this Himalayan paradise.</p>
+        </div>
+    </section>
+
+    <!-- Filters and Search -->
+    <section class="filters-section">
+        <div class="container">
+            <div class="filters-container">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search destinations..." />
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="cultural">Cultural Tourism</button>
+                    <button class="filter-btn" data-filter="adventure">Adventure Tourism</button>
+                    <button class="filter-btn" data-filter="eco">Eco-Tourism</button>
+                    <button class="filter-btn" data-filter="religious">Religious Sites</button>
+                    <button class="filter-btn" data-filter="heritage">Heritage Locations</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Grid -->
+    <section class="destinations-section">
+        <div class="container">
+            <div class="destinations-grid" id="destinationsGrid">
+                <!-- Destinations will be loaded dynamically by JavaScript -->
+            </div>
+            <div id="noResults" class="no-results" style="display: none;">
+                <i class="fas fa-search"></i>
+                <h3>No destinations found</h3>
+                <p>Try adjusting your search or filter criteria</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sikkim Tourism</h3>
+                    <p>Discover the pristine beauty and cultural harmony of Sikkim in the Eastern Himalayas.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="itinerary.html">Plan Trip</a></li>
+                        <li><a href="booking.html">Book Now</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> 03592-XXXXXX</p>
+                    <p><i class="fas fa-envelope"></i> support@sikkimtourism.gov.in</p>
+                    <p><i class="fab fa-whatsapp"></i> +91-XXXXXXXXXX</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sikkim Tourism. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script defer src="destinations.js"></script>
+    <script defer src="script.js"></script>
+</body>
+</html>
