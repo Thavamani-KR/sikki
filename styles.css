@@ -582,12 +582,12 @@ body {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
-/*.destination-header {
+.destination-detail-card[data-id="1"] .destination-header {
     height: 200px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     position: relative;
     overflow: hidden;
-}*/
+}
 
 .destination-info {
     padding: 1.5rem;
