@@ -346,11 +346,11 @@ body {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
-/*.destination-image {
+.destination-detail-card[data-id="1"] .destination-image {
     height: 200px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     position: relative;
-}*/
+}
 
 .destination-content {
     padding: 1.5rem;
