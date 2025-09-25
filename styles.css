@@ -352,6 +352,59 @@ body {
     position: relative;
 }
 
+.destination-detail-card[data-id="2"] .destination-image {
+    height: 200px;
+    background: url("assets/tsomo lake.jpg") no-repeat center center/cover;
+    position: relative;
+}
+
+.destination-detail-card[data-id="3"] .destination-image {
+    height: 200px;
+    background: url("assets/yumthang valley.jpg") no-repeat center center/cover;
+    position: relative;
+}
+
+.destination-detail-card[data-id="4"] .destination-image {
+    height: 200px;
+    background: url("assets/rumtek monastery.jpg") no-repeat center center/cover;
+    position: relative;
+}
+
+.destination-detail-card[data-id="5"] .destination-image {
+    height: 200px;
+    background: url("assets/nathula pass.jpg") no-repeat center center/cover;
+    position: relative;
+}
+
+.destination-detail-card[data-id="6"] .destination-image {
+    height: 200px;
+    background: url("assets/pelling.jpg") no-repeat center center/cover;
+    position: relative;
+}
+
+.destination-detail-card[data-id="7"] .destination-image {
+    height: 200px;
+    background: url("assets/gurutongmar lake.jpg") no-repeat center center/cover;
+    position: relative;
+}
+
+.destination-detail-card[data-id="8"] .destination-image {
+    height: 200px;
+    background: url("assets/lachung.jpg") no-repeat center center/cover;
+    position: relative;
+}
+
+.destination-detail-card[data-id="9"] .destination-image {
+    height: 200px;
+    background: url("assets/yuksom.jpg") no-repeat center center/cover;
+    position: relative;
+}
+.destination-detail-card[data-id="10"] .destination-image {
+    height: 200px;
+    background: url("assets/namchi.jpg") no-repeat center center/cover;
+    position: relative;
+}
+
 .destination-content {
     padding: 1.5rem;
 }
