@@ -147,3 +147,14 @@ function debounce(func, wait) {
         timeout = setTimeout(later, wait);
     };
 }
+//360 deg view 
+const panoramaImage = new PANOLENS.ImagePanorama("assets/360.jpg"); 
+const imageContainer = document.querySelector(".panorama"); 
+ 
+const viewer = new PANOLENS.Viewer({ 
+    container: imageContainer, 
+    autoRotate: true, 
+    autoRotateSpeed: 0.3 
+}); 
+ 
+viewer.add(panoramaImage);
