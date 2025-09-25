@@ -149,7 +149,7 @@ function debounce(func, wait) {
 }
 
 //360 deg view 
-const panoramaImage = new PANOLENS.ImagePanorama("assets/3.jpg"); 
+const panoramaImage = new PANOLENS.ImagePanorama("assets/360.jpg"); 
 const imageContainer = document.querySelector(".panorama"); 
  
 const viewer = new PANOLENS.Viewer({ 
