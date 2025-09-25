@@ -155,7 +155,7 @@ const imageContainer = document.querySelector(".panorama");
 const viewer = new PANOLENS.Viewer({ 
     container: imageContainer, 
     autoRotate: true, 
-    autoRotateSpeed: 0.5 
+    autoRotateSpeed: 0.10 
 }); 
  
 viewer.add(panoramaImage);
