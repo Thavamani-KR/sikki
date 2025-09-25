@@ -348,7 +348,7 @@ body {
 
 .destination-detail-card[data-id="1"] .destination-image {
     height: 200px;
-    background: url("assets/gangtok.jpeg") no-repeat center centre/cover;
+    background: url("assets/gangtok.jpeg") no-repeat center center/cover;
     position: relative;
 }
 
